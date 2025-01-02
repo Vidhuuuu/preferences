@@ -1,0 +1,21 @@
+[global]
+    origin = top-right
+    offset = 5x10
+    notification_limit = 10
+
+    separator_height = 6
+    padding = 6
+
+    frame_width = 1
+    frame_color = "#ffffff"
+    separator_color = "#7a7a7a"
+
+    font = Hack 9
+    line_height = 2
+    alignment = left
+
+    mouse_left_click = close_current
+    mouse_right_click = close_all
+[play_sound]
+    summary = "*"
+    script = /home/vidhu/Workspace/scripts/notif_sound.sh

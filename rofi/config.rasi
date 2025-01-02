@@ -1,0 +1,5 @@
+configuration { 
+    kb-cancel: "Escape,Control+c";
+    kb-secondary-copy: "";
+}
+* { font: "CourierPrime 11"; }
