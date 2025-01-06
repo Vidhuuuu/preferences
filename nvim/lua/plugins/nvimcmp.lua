@@ -3,11 +3,9 @@ return {
     dependencies = {
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-buffer",
-        {
-            "L3MON4D3/LuaSnip",
-            version = "v2.*"
-        },
-        "saadparwaiz1/cmp_luasnip"
+        { "L3MON4D3/LuaSnip", version = "v2.*" },
+        "saadparwaiz1/cmp_luasnip",
+        "kristijanhusak/vim-dadbod-completion"
     },
     config = function()
         local cmp = require("cmp")
@@ -29,8 +27,9 @@ return {
             sources = cmp.config.sources({
                 { name = "nvim_lsp", keyword_length = 3 },
                 { name = "luasnip" },
-                { name = "buffer", },
-                { name = "path" }
+                { name = "buffer" },
+                { name = "path" },
+                { name = "vim-dadbod-completion" }
             })
         })
     end
