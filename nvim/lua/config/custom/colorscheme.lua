@@ -1,5 +1,0 @@
-vim.cmd.colorscheme("vim")
-vim.api.nvim_set_hl(0, "TabLine", { bg = "#383838" })
-vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e1e" })
-vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#b75345" })
-vim.api.nvim_set_hl(0, "StatusLine", { bg = "#161616" })

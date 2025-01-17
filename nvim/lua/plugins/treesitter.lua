@@ -14,7 +14,12 @@ return {
                     }
                 },
                 indent = { enable = true },
-                ensure_installed = { "lua", "c", "go", "markdown", "cpp", "ocaml" }
+                ensure_installed = {
+                    "lua", "c", "go",
+                    "markdown", "cpp",
+                    "ocaml", "javascript",
+                    "typescript"
+                }
             })
         end
     },

@@ -58,6 +58,11 @@ return {
                 lspconfig["ocamllsp"].setup({
                     capabilities = capabilities
                 })
+            end,
+            ["ts_ls"] = function()
+                lspconfig["ts_ls"].setup({
+                    capabilities = capabilities
+                })
             end
         })
     end
