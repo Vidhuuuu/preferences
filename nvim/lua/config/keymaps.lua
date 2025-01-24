@@ -15,7 +15,6 @@ vim.keymap.set("v", "<C-h>", "<Cmd>norm!\"_D<CR>", { silent = true })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
-vim.keymap.set("v", "<leader>ft", ":!column -t -s '|' -o '|'<CR>", { silent = true })
 
 vim.keymap.set("c", "<C-j>", "<Down>")
 vim.keymap.set("c", "<C-k>", "<Up>")
