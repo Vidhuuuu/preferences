@@ -23,3 +23,5 @@ vim.keymap.set("n", "<C-s>", "<C-6>")
 vim.keymap.set("n", "<leader>rr", "\"zyiw:%s/<C-r><C-r>z/")
 vim.keymap.set("n", "]b", "<Cmd>bnext<CR>")
 vim.keymap.set("n", "[b", "<Cmd>bprev<CR>")
+
+vim.keymap.set("n", "gp", "`[v`]", { noremap = true })

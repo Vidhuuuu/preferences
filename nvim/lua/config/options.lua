@@ -22,3 +22,4 @@ vim.o.colorcolumn = "80"
 vim.o.equalalways = false
 vim.o.undodir = "/home/vidhu/Workspace/undodir"
 vim.o.undofile = true
+vim.o.shiftround = true
