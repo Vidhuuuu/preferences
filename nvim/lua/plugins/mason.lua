@@ -8,7 +8,8 @@ return {
                 "lua_ls",
                 "gopls",
                 "clangd",
-                "ocamllsp"
+                "ocamllsp",
+                "pyright"
             }
         })
     end

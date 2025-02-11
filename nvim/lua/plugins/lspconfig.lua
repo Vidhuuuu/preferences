@@ -63,6 +63,11 @@ return {
                 lspconfig["ts_ls"].setup({
                     capabilities = capabilities
                 })
+            end,
+            ["pyright"] = function()
+                lspconfig["pyright"].setup({
+                    capabilities = capabilities
+                })
             end
         })
     end

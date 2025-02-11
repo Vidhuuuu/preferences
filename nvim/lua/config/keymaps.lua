@@ -25,3 +25,4 @@ vim.keymap.set("n", "]b", "<Cmd>bnext<CR>")
 vim.keymap.set("n", "[b", "<Cmd>bprev<CR>")
 
 vim.keymap.set("n", "gp", "`[v`]", { noremap = true })
+vim.keymap.set("n", "<leader>p", "=ip", { noremap = true })
