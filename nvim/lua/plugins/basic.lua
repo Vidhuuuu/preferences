@@ -18,12 +18,15 @@ return {
         end
     },
     {
-        "ishan9299/modus-theme-vim",
-        priority = 1000,
-        lazy = false,
-        config = function()
-            vim.cmd.colorscheme("modus-vivendi")
-            vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#333333" })
-        end
+        "jackplus-xyz/binary.nvim",
+        opts = {}
+    },
+    {
+        "yuratomo/w3m.vim",
+        vim.keymap.set("n", "<leader>sw", function()
+            local query = vim.fn.input("W3m> ")
+            vim.cmd("W3mSplit " .. query)
+            vim.cmd("W3mSyntaxOff")
+        end)
     }
 }
