@@ -12,7 +12,8 @@ return {
         priority = 1000,
         config = function()
             vim.cmd.colorscheme("modus_vivendi")
-            vim.api.nvim_set_hl(0 ,"Comment", { fg = "#00ffff" })
+            vim.api.nvim_set_hl(0 ,"Comment", { fg = "#f9ed07" })
+            vim.api.nvim_set_hl(0 ,"StatusLine", { bg = "#000000", fg = "#ffffff" })
         end
     }
 }

@@ -11,7 +11,6 @@ vim.keymap.set("n", "<C-M-k>", "<Cmd>resize -3<CR>")
 vim.keymap.set("n", "<C-M-l>", "<cmd>vertical resize +3<CR>")
 
 vim.keymap.set("i", "jk", "<ESC>")
-vim.keymap.set("v", "<C-h>", "<Cmd>norm!\"_D<CR>", { silent = true })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
@@ -32,8 +31,6 @@ vim.keymap.set("n", "<C-q>", function()
     end
     vim.cmd("copen")
 end, { noremap = true })
-vim.keymap.set("n", "<M-i>", "<Cmd>cnext<CR>zz", { noremap = true })
-vim.keymap.set("n", "<M-o>", "<Cmd>cprev<CR>zz", { noremap = true })
 
 vim.keymap.set("n", "dm", function()
     local mark = vim.fn.getcharstr()

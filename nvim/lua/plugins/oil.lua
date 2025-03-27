@@ -30,7 +30,6 @@ return {
                 ["gl"] = { "actions.select", opts = { vertical = true } },
                 ["gn"] = { "actions.select", opts = { horizontal = true } }
             },
-            use_default_keymaps = false,
             view_options = {
                 show_hidden = true
             }
