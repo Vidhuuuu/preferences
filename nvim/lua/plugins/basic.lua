@@ -14,10 +14,5 @@ return {
             vim.cmd.colorscheme("modus_vivendi")
             vim.api.nvim_set_hl(0 ,"Comment", { fg = "#00ffff" })
         end
-    },
-    {
-        "chentoast/marks.nvim",
-        event = "VeryLazy",
-        opts = {}
     }
 }

@@ -23,3 +23,4 @@ vim.o.equalalways = false
 vim.o.undodir = "/home/vidhu/Workspace/undodir"
 vim.o.undofile = true
 vim.o.shiftround = true
+vim.o.completeopt = "menu,menuone,noselect,noinsert"
