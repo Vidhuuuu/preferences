@@ -8,25 +8,13 @@ return {
         end
     },
     {
-        "nacro90/numb.nvim",
-        config = function()
-            require("numb").setup({
-                show_numbers = false,
-                hide_relativenumbers = false,
-                centered_peeking = false
-            })
-        end
-    },
-    {
         "jackplus-xyz/binary.nvim",
+        "miikanissi/modus-themes.nvim",
         opts = {}
     },
     {
-        "yuratomo/w3m.vim",
-        vim.keymap.set("n", "<leader>sw", function()
-            local query = vim.fn.input("W3m> ")
-            vim.cmd("W3mSplit " .. query)
-            vim.cmd("W3mSyntaxOff")
-        end)
+        "chentoast/marks.nvim",
+        event = "VeryLazy",
+        opts = {}
     }
 }

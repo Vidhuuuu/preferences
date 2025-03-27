@@ -17,11 +17,13 @@ return {
                     client.server_capabilities.semanticTokensProvider = nil
                 end
                 vim.keymap.set("n", "gd", vim.lsp.buf.definition)
-                vim.keymap.set("n", "gD", vim.lsp.buf.declaration)
-                vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
-                vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
+                vim.keymap.set("n", "]d", function()
+                    vim.diagnostic.jump({ count = 1, float = true })
+                end)
+                vim.keymap.set("n", "[d", function()
+                    vim.diagnostic.jump({ count = -1, float = true })
+                end)
                 vim.keymap.set("n", "L", vim.diagnostic.open_float)
-                vim.keymap.set({ "n", "v", }, "<leader>ca", vim.lsp.buf.code_action)
                 vim.keymap.set("n", "K", vim.lsp.buf.hover)
             end
         })
@@ -42,31 +44,6 @@ return {
                             }
                         }
                     }
-                })
-            end,
-            ["gopls"] = function()
-                lspconfig["gopls"].setup({
-                    capabilities = capabilities
-                })
-            end,
-            ["clangd"] = function()
-                lspconfig["clangd"].setup({
-                    capabilities = capabilities
-                })
-            end,
-            ["ocamllsp"] = function()
-                lspconfig["ocamllsp"].setup({
-                    capabilities = capabilities
-                })
-            end,
-            ["ts_ls"] = function()
-                lspconfig["ts_ls"].setup({
-                    capabilities = capabilities
-                })
-            end,
-            ["pyright"] = function()
-                lspconfig["pyright"].setup({
-                    capabilities = capabilities
                 })
             end
         })

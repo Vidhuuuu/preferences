@@ -18,7 +18,7 @@ return {
                     "lua", "c", "go",
                     "markdown", "cpp",
                     "ocaml", "javascript",
-                    "typescript"
+                    "typescript", "query"
                 }
             })
         end

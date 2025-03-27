@@ -1,9 +1,15 @@
 [font]
 size = 9.6
+
 normal = { family = "CourierPrime" }
 bold = { family = "CourierPrime" }
 italic = { family = "CourierPrime", style = "Regular" }
 bold_italic = { family = "CourierPrime", style = "Regular" }
+
+# normal = { family = "CourierPrime" }
+# bold = { family = "CourierPrime" }
+# italic = { family = "CourierPrime" }
+# bold_italic = { family = "CourierPrime" }
 
 [window]
 padding = { x = 2, y = 2 }
@@ -11,5 +17,4 @@ padding = { x = 2, y = 2 }
 [colors]
 primary.background = "#000000"
 cursor.text = "#000000"
-# cursor.cursor = "#d1d1d1"
 cursor.cursor = "#1ff21f"
