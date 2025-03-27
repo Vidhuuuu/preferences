@@ -43,3 +43,13 @@ vim.keymap.set("n", "dm", function()
         print("Invalid mark: " .. mark)
     end
 end)
+
+vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+vim.keymap.set("n", "]d", function()
+    vim.diagnostic.jump({ count = 1, float = true })
+end)
+vim.keymap.set("n", "[d", function()
+    vim.diagnostic.jump({ count = -1, float = true })
+end)
+vim.keymap.set("n", "L", vim.diagnostic.open_float)
+vim.keymap.set("n", "K", vim.lsp.buf.hover)

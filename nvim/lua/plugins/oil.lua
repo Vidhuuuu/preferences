@@ -1,5 +1,8 @@
 return {
     "stevearc/oil.nvim",
+    dependencies = {
+        {"nvim-tree/nvim-web-devicons", opts = {}}
+    },
     config = function()
         local oil = require("oil")
         function _G.get_dir_winbar()
@@ -8,6 +11,7 @@ return {
         oil.setup({
             default_file_explorer = true,
             columns = {
+                "icon",
                 "permissions",
                 "size",
                 "birthtime"

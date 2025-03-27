@@ -8,9 +8,12 @@ return {
         end
     },
     {
-        "jackplus-xyz/binary.nvim",
         "miikanissi/modus-themes.nvim",
-        opts = {}
+        priority = 1000,
+        config = function()
+            vim.cmd.colorscheme("modus_vivendi")
+            vim.api.nvim_set_hl(0 ,"Comment", { fg = "#00ffff" })
+        end
     },
     {
         "chentoast/marks.nvim",
