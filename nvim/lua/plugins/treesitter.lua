@@ -13,7 +13,7 @@ return {
                         node_decremental = "<C-space>"
                     }
                 },
-                indent = { enable = true },
+                indent = { enable = false },
                 ensure_installed = {
                     "lua", "c", "go",
                     "markdown", "cpp",

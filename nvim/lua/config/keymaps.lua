@@ -32,15 +32,6 @@ vim.keymap.set("n", "<C-q>", function()
     vim.cmd("copen")
 end, { noremap = true })
 
-vim.keymap.set("n", "dm", function()
-    local mark = vim.fn.getcharstr()
-    if mark:match("[a-zA-Z]") then
-        vim.cmd("delmarks " .. mark)
-    else
-        print("Invalid mark: " .. mark)
-    end
-end)
-
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "]d", function()
     vim.diagnostic.jump({ count = 1, float = true })
