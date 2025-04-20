@@ -7,13 +7,5 @@ return {
             vim.g.undotree_SetFocusWhenToggle = 1
         end
     },
-    {
-        "miikanissi/modus-themes.nvim",
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme("modus_vivendi")
-            vim.api.nvim_set_hl(0 ,"Comment", { fg = "#dbdddd" })
-            vim.api.nvim_set_hl(0 ,"StatusLine", { bg = "#000000", fg = "#ffffff" })
-        end
-    }
+    { "zhimsel/vim-stay" }
 }

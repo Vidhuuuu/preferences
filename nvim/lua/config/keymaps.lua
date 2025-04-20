@@ -29,7 +29,7 @@ vim.keymap.set("n", "<C-q>", function()
             return
         end
     end
-    vim.cmd("copen")
+   vim.cmd("copen")
 end, { noremap = true })
 
 vim.keymap.set("n", "gd", vim.lsp.buf.definition)

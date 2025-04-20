@@ -1,6 +1,6 @@
 return {
     cmd = { "pyright-langserver", "--stdio" },
-    root_markers = { "pyproject.toml", ".git" },
+    root_markers = { "pyrightconfig.json", ".git" },
     filetypes = { "python" },
     settings = {
         python = {
