@@ -1,5 +1,8 @@
 return {
-    cmd = { "ocamllsp" },
+    cmd = { "ocamllsp", "--fallback-read-dot-merlin" },
     root_markers = { "dune-project", ".ocamlformat" },
-    filetypes = { "ocaml", "reason" }
+    filetypes = { "ocaml", "reason" },
+    settings = {
+        formatting = true
+    }
 }

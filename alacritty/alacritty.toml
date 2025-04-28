@@ -3,8 +3,8 @@ size = 9.6
 
 normal = { family = "CourierPrimeNerdFont" }
 bold = { family = "CourierPrimeNerdFont" }
-italic = { family = "CourierPrimeNerdFont", style = "Regular" }
-bold_italic = { family = "CourierPrimeNerdFont", style = "Regular" }
+italic = { family = "CourierPrimeNerdFont" }
+bold_italic = { family = "CourierPrimeNerdFont" }
 
 [window]
 padding = { x = 2, y = 2 }

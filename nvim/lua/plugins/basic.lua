@@ -7,5 +7,25 @@ return {
             vim.g.undotree_SetFocusWhenToggle = 1
         end
     },
-    { "zhimsel/vim-stay" }
+    {
+        "miikanissi/modus-themes.nvim",
+        priority = 1000,
+        config = function()
+            require("modus-themes").setup({
+                on_highlights = function(highlight)
+                    highlight.StatusLine = { bg = "#000000", fg = "#ffffff" }
+                    highlight.SnippetTabStop = { bg = nil, fg = nil }
+                    highlight.Comment = { fg = "#dbdddd", italic = true }
+                end
+            })
+            vim.cmd.colorscheme("modus_vivendi")
+        end
+    },
+    { "zhimsel/vim-stay" },
+    {
+        "j-hui/fidget.nvim",
+        opts = {
+            progress = { display = { progress_icon = { "moon" } } }
+        }
+    }
 }
