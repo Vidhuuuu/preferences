@@ -1,10 +1,10 @@
 [font]
-size = 9.6
+size = 9.0
 
-normal = { family = "CourierPrimeNerdFont" }
-bold = { family = "CourierPrimeNerdFont" }
-italic = { family = "CourierPrimeNerdFont" }
-bold_italic = { family = "CourierPrimeNerdFont" }
+normal = { family = "SFMono" }
+bold = { family = "SFMono" }
+italic = { family = "SFMono" }
+bold_italic = { family = "SFMono" }
 
 [window]
 padding = { x = 2, y = 2 }

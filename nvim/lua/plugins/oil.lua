@@ -9,16 +9,10 @@ return {
             return vim.fn.fnamemodify(oil.get_current_dir(), ":~")
         end
         oil.setup({
+            skip_confirm_for_simple_edits = true,
             default_file_explorer = true,
-            columns = {
-                "icon",
-                "permissions",
-                "size",
-                "birthtime"
-            },
-            win_options = {
-                winbar = "%!v:lua.get_dir_winbar()"
-            },
+            columns = { "icon", "permissions", "size", "birthtime" },
+            win_options = { winbar = "%!v:lua.get_dir_winbar()" },
             watch_for_changes = true,
             keymaps = {
                 ["<CR>"] = "actions.select",
@@ -30,10 +24,8 @@ return {
                 ["gl"] = { "actions.select", opts = { vertical = true } },
                 ["gn"] = { "actions.select", opts = { horizontal = true } }
             },
-            view_options = {
-                show_hidden = true
-            }
+            view_options = { show_hidden = true }
         })
-        vim.keymap.set("n", "-", "<Cmd>Oil<CR>")
+        vim.keymap.set("n", "-", oil.open)
     end
 }

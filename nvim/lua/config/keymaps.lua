@@ -33,3 +33,7 @@ vim.keymap.set("n", "<C-q>", function()
 end, { noremap = true })
 
 vim.keymap.set("t", "<C-space>", "<C-\\><C-n>")
+vim.keymap.set("n", "<C-M-j>", "<Cmd>cnext<CR>")
+vim.keymap.set("n", "<C-M-k>", "<Cmd>cprev<CR>")
+vim.keymap.set("n", "<C-M-h>", "gT")
+vim.keymap.set("n", "<C-M-l>", "gt")

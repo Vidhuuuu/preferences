@@ -5,7 +5,7 @@ return {
     settings = {
         python = {
             analysis = {
-                typeCheckingMode = "strict",
+                -- typeCheckingMode = "strict",
                 useLibraryCodeForTypes = true,
                 autoSearchPaths = true
             }
